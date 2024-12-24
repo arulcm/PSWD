@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datavalidation</title>
+    <link rel="stylesheet" href="datavalidation.css">
+</head>
+<body>
+    <div>
+        <h1>USER DETAILS</h1>
+        <form action="insert.php" method="post">
+            <label for="fname">First name :</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter Firstname" required><br><br>
+            <label for="lname">Last name :</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Lastname" required><br><br>
+            <label for="dateofbirth">Date of Birth :</label>
+            <input type="date" id="dateofbirth" name="birth" required><br><br>
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+            <label for="password">Password :</label>
+            <input type="password" name="password"  id="password"   placeholder="Enter password" required><br><br>
+            <label for="phone">Phone :</label>
+            <input type="tel" placeholder="Enter Phone number" name="phone" maxlength="10" required><br><br>
+            <!-- <input type="submit" name="submit"> -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>
